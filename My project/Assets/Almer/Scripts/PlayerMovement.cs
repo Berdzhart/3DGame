@@ -7,11 +7,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float xClampRange = 5f;
     [SerializeField] float yClampRange = 5f;
 
+    [SerializeField] float controlPitchFactor = 18f;
+    [SerializeField] float controlRollFactor = 20f;
+    [SerializeField] float rotationSpeed = 10f;
+
     Vector2 movement;
 
     void Update()
     {
         ProcessTranslation();
+        ProcessRotation();
     }
 
     public void OnMove(InputValue value)
@@ -32,5 +37,14 @@ public class PlayerMovement : MonoBehaviour
 
         transform.localPosition = new Vector3(transform.localPosition.x + xOffset, transform.localPosition.y + yOffset, 0f);
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, 0f);
+    }
+
+    void ProcessRotation()
+    {
+        float pitch = -controlPitchFactor * movement.y;
+        float roll = -controlRollFactor * movement.x;
+
+        Quaternion targetRotation = Quaternion.Euler(pitch, 0f, roll);
+        transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
 }
