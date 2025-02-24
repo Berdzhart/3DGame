@@ -167,9 +167,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2089376591517887900, guid: c9ee1c5b2e2e39d4696fd4d6048d8572, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089376591517887900, guid: c9ee1c5b2e2e39d4696fd4d6048d8572, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2127265673329434558, guid: c9ee1c5b2e2e39d4696fd4d6048d8572, type: 3}
       propertyPath: m_Name
       value: Enemy Wave 5 Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704817249724831230, guid: c9ee1c5b2e2e39d4696fd4d6048d8572, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704817249724831230, guid: c9ee1c5b2e2e39d4696fd4d6048d8572, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 3704817249724831230, guid: c9ee1c5b2e2e39d4696fd4d6048d8572, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609954415775326291, guid: c9ee1c5b2e2e39d4696fd4d6048d8572, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -104.7
       objectReference: {fileID: 0}
     - target: {fileID: 5991663496003243201, guid: c9ee1c5b2e2e39d4696fd4d6048d8572, type: 3}
       propertyPath: m_PlayableAsset
@@ -188,7 +212,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 107980177}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8472956798465767357, guid: c9ee1c5b2e2e39d4696fd4d6048d8572, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9ee1c5b2e2e39d4696fd4d6048d8572, type: 3}
@@ -763,6 +788,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 76244336867375966, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1866590357}
+    - target: {fileID: 76244336867375966, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 691177404321823906, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -803,6 +836,52 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: timelineTextLines.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[0]'
+      value: '*weird signal connects to the radio*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[1]'
+      value: 'Co-Pilot : Captain, the keplerian are communicating'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[2]'
+      value: 'Keplerian : u hn pmo sm icl, cn js go, ts nup,'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[3]'
+      value: "Co-Pilot : huh, I don\u2019t understand"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[4]'
+      value: "Captain : I think they are warning us, just so you know keplerian this
+        planet isn\u2019t yours, give it back to us."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[5]'
+      value: 'Pilot B: this is 4R-1, we are getting ambushed. Over'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[6]'
+      value: 'Pilot : this L3-O, we are close to you, we might be able to assist
+        you. Just hold on. Over'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[7]'
+      value: "Pilot B : We can\u2019t hold any longer, sorry, captain."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[8]'
+      value: 'Pilot : What? Pilot B what happened? Hello? Over.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[9]'
+      value: "Pilot : Quick, let\u2019s go there "
+      objectReference: {fileID: 0}
     - target: {fileID: 6796345179687140521, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
       propertyPath: m_Name
       value: Managers
@@ -834,6 +913,87 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1259496752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1259496756}
+  - component: {fileID: 1259496755}
+  - component: {fileID: 1259496754}
+  - component: {fileID: 1259496753}
+  m_Layer: 0
+  m_Name: Cant Shoot Trigger (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1259496753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259496752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae1b105c21cd9041bfe866a8820af35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: Player
+--- !u!114 &1259496754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259496752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9c627b5891e053428ee46345890d78b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableDuration: 15.5
+--- !u!65 &1259496755
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259496752}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 151.7314, y: 96.96834, z: 2.3113022}
+  m_Center: {x: 32.230637, y: -3.8935394, z: 0.6552719}
+--- !u!4 &1259496756
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259496752}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 577.7, y: 16.6, z: 640.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1433986885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1412,3 +1572,4 @@ SceneRoots:
   - {fileID: 107980175}
   - {fileID: 426569487}
   - {fileID: 209446743}
+  - {fileID: 1259496756}
