@@ -15,7 +15,6 @@ public class EnemyShooter : MonoBehaviour
     void Start()
     {
         player = GameObject.FindWithTag("Player")?.transform;
-
     }
 
     private void Update()
@@ -24,7 +23,6 @@ public class EnemyShooter : MonoBehaviour
         /*StartCoroutine(ShootRoutine());*/
         if (CountDownBetweenFire <= 0)
         {
-            
             Shoot();
             CountDownBetweenFire = 1f / FireRate;
         }
@@ -42,18 +40,19 @@ public class EnemyShooter : MonoBehaviour
 
     void Shoot()
     {
- 
-
-        GameObject laser = Instantiate(laserPrefab, firePoint.position, firePoint.transform.rotation);
-        Laser bulletScript = laser.GetComponent<Laser>();
-        Vector3 direction = (player.position - firePoint.position);
-        laser.transform.rotation = Quaternion.LookRotation(direction);
-
-        // Make the laser move
-        Laser laserScript = laser.GetComponent<Laser>();
-        if (laserScript)
+        if (player != null)
         {
-            laserScript.SetDirection(direction);
+            GameObject laser = Instantiate(laserPrefab, firePoint.position, firePoint.transform.rotation);
+            Laser bulletScript = laser.GetComponent<Laser>();
+            Vector3 direction = (player.position - firePoint.position);
+            laser.transform.rotation = Quaternion.LookRotation(direction);
+
+            // Make the laser move
+            Laser laserScript = laser.GetComponent<Laser>();
+            if (laserScript)
+            {
+                laserScript.SetDirection(direction);
+            }
         }
     }
 }

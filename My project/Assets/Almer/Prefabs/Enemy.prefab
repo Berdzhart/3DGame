@@ -162,6 +162,7 @@ GameObject:
   - component: {fileID: 3258113046375007738}
   - component: {fileID: 3280019783592788739}
   - component: {fileID: 7550270140254176709}
+  - component: {fileID: 8189981044788292933}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -219,6 +220,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.7, y: 0.78, z: 2.7}
   m_Center: {x: 0, y: 0.08, z: 0}
+--- !u!114 &8189981044788292933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6852120644365732855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9011d30af31710445ab5c8abdb9cd245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserPrefab: {fileID: 2037726799570226560, guid: 6b589d4cbc3dd8745a2b61af3d561298, type: 3}
+  firePoint: {fileID: 3258113046375007738}
+  fireRateMin: 2
+  fireRateMax: 4
+  FireRate: 2
 --- !u!1 &7441934056524702343
 GameObject:
   m_ObjectHideFlags: 0

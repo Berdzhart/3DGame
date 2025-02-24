@@ -240,11 +240,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!4 &462979098 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5217603354997938131, guid: 27ea2e8b5538cf04bb15253b92fd227d, type: 3}
-  m_PrefabInstance: {fileID: 8210144626875010497}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &588647633 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5389082490925743321, guid: 9155484f92a6d28408c00f5ea2ef177c, type: 3}
@@ -575,10 +570,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laserPrefab: {fileID: 2037726799570226560, guid: 6b589d4cbc3dd8745a2b61af3d561298, type: 3}
-  firePoint: {fileID: 462979098}
+  firePoint: {fileID: 1774252980}
   fireRateMin: 2
   fireRateMax: 4
   FireRate: 2
+--- !u!4 &1774252980 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3258113046375007738, guid: f989ff6a651a9c04791f4e37d4bfaf49, type: 3}
+  m_PrefabInstance: {fileID: 3423002562251048559}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1985813544
 PrefabInstance:
   m_ObjectHideFlags: 0

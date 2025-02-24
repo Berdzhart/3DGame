@@ -4,6 +4,8 @@ public class HealthManager : MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
+
+    [SerializeField] GameObject playerDestroyedVFX;
     
     // Referensi ke script HealthBar
     public HealthBar healthBarUI;
@@ -38,7 +40,7 @@ public class HealthManager : MonoBehaviour
 
     void Die()
     {
-        Debug.Log(gameObject.name + " telah mati!");
-        // Tambahkan logika kematian seperti animasi, restart, dll.
+        Instantiate(playerDestroyedVFX, transform.position,Quaternion.identity);
+        Destroy(this.gameObject);
     }
 }
