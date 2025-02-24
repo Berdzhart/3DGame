@@ -10,12 +10,12 @@ public class EnemyShooter : MonoBehaviour
     public float fireRateMax = 4f;   // Max time between shots
     [SerializeField] private float FireRate = 2f;
     private float CountDownBetweenFire = 0f;
-    [SerializeField] public Transform player;
+    private Transform player;
 
     void Start()
     {
-        
         player = GameObject.FindWithTag("Player").transform;
+        
     }
 
     private void Update()
@@ -28,7 +28,6 @@ public class EnemyShooter : MonoBehaviour
             CountDownBetweenFire = 1f / FireRate;
         }
         CountDownBetweenFire -= Time.deltaTime;
-        
 
     }
     /*IEnumerator ShootRoutine()
