@@ -333,6 +333,87 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
+--- !u!1 &263085629
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 263085633}
+  - component: {fileID: 263085632}
+  - component: {fileID: 263085631}
+  - component: {fileID: 263085630}
+  m_Layer: 0
+  m_Name: Cant Shoot Trigger (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &263085630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263085629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae1b105c21cd9041bfe866a8820af35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: Player
+--- !u!114 &263085631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263085629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9c627b5891e053428ee46345890d78b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableDuration: 15.5
+--- !u!65 &263085632
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263085629}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 151.7314, y: 96.96834, z: 2.3113022}
+  m_Center: {x: 32.230637, y: -3.8935394, z: 0.6552719}
+--- !u!4 &263085633
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263085629}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.0019843532, z: -0, w: 0.9999981}
+  m_LocalPosition: {x: 455.3, y: 92, z: 336.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0.227, z: 0}
 --- !u!1001 &292060917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -684,6 +765,65 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 1473375448}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: timelineTextLines.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[0]'
+      value: "Pilot : Welcome to your first on-field planet raid. I\u2019ll be your
+        captain for today. I will guide you through your part first. From now on,
+        I will be the one controlling the movement of the ship using W,A,S,D to dodge
+        projectiles."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[1]'
+      value: "Co-Pilot : Roger that, captain. So I guess i\u2019ll be the one shooting?
+        forward"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[2]'
+      value: 'Pilot : Correct, you will handle the shooting part by moving my Mouse
+        Cursor and pressing/holding the Left Mouse button.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[3]'
+      value: 'Pilot A : This is C4-P, reporting for duty. Over'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[4]'
+      value: 'Pilot : Where are the others? Over '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[5]'
+      value: 'Other Pilots : 4R-1, T4-U, G3-M, C4-N, V1-R, L1-B, SC-0, S4-G, 4Q-U,
+        P1-S.. reporting for duty, over *in unison*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[6]'
+      value: "Pilot : Roger. Remember the code: 1. Even if one of us is down, we
+        must keep moving forward. 2. Even if we are going down, we must keep in touch
+        and give proper information on what happened. 3. We aren\u2019t going until
+        our goal is achieved. 4 May the stars align with you."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[8]'
+      value: 'Pilot : Now, EVERYONE EXECUTE OPERATION CONSTELLAR.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[9]'
+      value: '*other radio signals in*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[10]'
+      value: "Pilot A: Hey, I just want to say congratulations to the rookie. Welcome
+        to the team, don\u2019t worry we\u2019ve done this a million times. You\u2019ll
+        be alright"
+      objectReference: {fileID: 0}
     - target: {fileID: 6796345179687140521, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
       propertyPath: m_Name
       value: Managers
@@ -715,143 +855,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &961739749
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 961739753}
-  - component: {fileID: 961739752}
-  - component: {fileID: 961739751}
-  - component: {fileID: 961739750}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &961739750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961739749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
---- !u!81 &961739751
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961739749}
-  m_Enabled: 1
---- !u!20 &961739752
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961739749}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &961739753
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961739749}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1224427693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1022,6 +1025,22 @@ PrefabInstance:
 --- !u!1 &1473375447 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1276309029980962324, guid: 9155484f92a6d28408c00f5ea2ef177c, type: 3}
+  m_PrefabInstance: {fileID: 1473375446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1473375448 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5947801742102263049, guid: 9155484f92a6d28408c00f5ea2ef177c, type: 3}
+  m_PrefabInstance: {fileID: 1473375446}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473375447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &1473375449 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5389082490925743321, guid: 9155484f92a6d28408c00f5ea2ef177c, type: 3}
   m_PrefabInstance: {fileID: 1473375446}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1836577206
@@ -1540,6 +1559,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerRig
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 4923926451598339150, guid: 27ea2e8b5538cf04bb15253b92fd227d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+=======
+    - target: {fileID: 4102219281381011165, guid: 27ea2e8b5538cf04bb15253b92fd227d, type: 3}
+      propertyPath: crosshair
+      value: 
+      objectReference: {fileID: 1473375449}
+>>>>>>> a032695a0d62bc05379f0fedb81ef9d0af83766c
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1554,7 +1584,6 @@ Animator:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 961739753}
   - {fileID: 1993696072}
   - {fileID: 203844589}
   - {fileID: 1840593867}
@@ -1564,3 +1593,4 @@ SceneRoots:
   - {fileID: 1872067888}
   - {fileID: 500093573}
   - {fileID: 722485976}
+  - {fileID: 263085633}
