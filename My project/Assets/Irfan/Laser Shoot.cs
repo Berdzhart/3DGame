@@ -14,7 +14,8 @@ public class EnemyShooter : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindWithTag("Player")?.transform;
+        player = GameObject.FindWithTag("Player").transform;
+        
     }
 
     private void Update()
@@ -46,6 +47,7 @@ public class EnemyShooter : MonoBehaviour
             Laser bulletScript = laser.GetComponent<Laser>();
             Vector3 direction = (player.position - firePoint.position);
             laser.transform.rotation = Quaternion.LookRotation(direction);
+            Debug.Log(player.transform.position);
 
             // Make the laser move
             Laser laserScript = laser.GetComponent<Laser>();

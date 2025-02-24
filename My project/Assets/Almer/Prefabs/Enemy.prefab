@@ -234,9 +234,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserPrefab: {fileID: 2037726799570226560, guid: 6b589d4cbc3dd8745a2b61af3d561298, type: 3}
   firePoint: {fileID: 3258113046375007738}
-  fireRateMin: 2
-  fireRateMax: 4
-  FireRate: 2
+  fireRateMin: 0.1
+  fireRateMax: 0.5
+  FireRate: 0.2
 --- !u!1 &7441934056524702343
 GameObject:
   m_ObjectHideFlags: 0
