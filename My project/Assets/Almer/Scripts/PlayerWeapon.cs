@@ -8,6 +8,7 @@ public class PlayerWeapon : MonoBehaviour
     [SerializeField] Transform targetPoint;
     [SerializeField] float targetDistance = 100f;
 
+    public bool canShoot = true;
     bool isFiring = false;
 
     void Start()
@@ -17,7 +18,10 @@ public class PlayerWeapon : MonoBehaviour
 
     private void Update()
     {
-        ProcessFiring();
+        if (canShoot)
+        {
+            ProcessFiring();
+        }
         MoveCrosshair();
         MoveTargetPoint();
         AimLasers();
