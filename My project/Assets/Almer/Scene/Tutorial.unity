@@ -684,6 +684,65 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 1473375448}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: timelineTextLines.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[0]'
+      value: "Pilot : Welcome to your first on-field planet raid. I\u2019ll be your
+        captain for today. I will guide you through your part first. From now on,
+        I will be the one controlling the movement of the ship using W,A,S,D to dodge
+        projectiles."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[1]'
+      value: "Co-Pilot : Roger that, captain. So I guess i\u2019ll be the one shooting?
+        forward"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[2]'
+      value: 'Pilot : Correct, you will handle the shooting part by moving my Mouse
+        Cursor and pressing/holding the Left Mouse button.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[3]'
+      value: 'Pilot A : This is C4-P, reporting for duty. Over'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[4]'
+      value: 'Pilot : Where are the others? Over '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[5]'
+      value: 'Other Pilots : 4R-1, T4-U, G3-M, C4-N, V1-R, L1-B, SC-0, S4-G, 4Q-U,
+        P1-S.. reporting for duty, over *in unison*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[6]'
+      value: "Pilot : Roger. Remember the code: 1. Even if one of us is down, we
+        must keep moving forward. 2. Even if we are going down, we must keep in touch
+        and give proper information on what happened. 3. We aren\u2019t going until
+        our goal is achieved. 4 May the stars align with you."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[8]'
+      value: 'Pilot : Now, EVERYONE EXECUTE OPERATION CONSTELLAR.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[9]'
+      value: '*other radio signals in*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: 'timelineTextLines.Array.data[10]'
+      value: "Pilot A: Hey, I just want to say congratulations to the rookie. Welcome
+        to the team, don\u2019t worry we\u2019ve done this a million times. You\u2019ll
+        be alright"
+      objectReference: {fileID: 0}
     - target: {fileID: 6796345179687140521, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
       propertyPath: m_Name
       value: Managers
@@ -1024,6 +1083,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1276309029980962324, guid: 9155484f92a6d28408c00f5ea2ef177c, type: 3}
   m_PrefabInstance: {fileID: 1473375446}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1473375448 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5947801742102263049, guid: 9155484f92a6d28408c00f5ea2ef177c, type: 3}
+  m_PrefabInstance: {fileID: 1473375446}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473375447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1836577206
 GameObject:
   m_ObjectHideFlags: 0
