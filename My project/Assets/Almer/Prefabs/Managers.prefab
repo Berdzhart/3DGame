@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4096878076722757281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2807497509953945996}
+  - component: {fileID: 3199214660478765011}
+  - component: {fileID: 76244336867375966}
+  m_Layer: 0
+  m_Name: Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2807497509953945996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4096878076722757281}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 691177404321823906}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3199214660478765011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4096878076722757281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1de61cc0a98ffd84b8c7251fe6c88896, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timelineTextLines:
+  - 
+  - "Pilot : \u2026 we must keep moving forward"
+  - 'Co-Pilot : *gulps*'
+  - 'Other Pilot: This is C4-N, we are requesting backup. Over'
+  - 'Other Pilot: This is T4-U, we are also getting outnumbered here. Over'
+  - 'Co-Pilot: Hang on we are almost there. Over'
+  - 'Other Pilot: this is 4Q-U and G3-M, there is a mothership across the two big
+    hill but they are too many UFO we might not be ab-'
+  - 'Pilot: Hello 4Q-U? G3-M? C4-P? Anyone there?'
+  - 'Other Pilot: Cap- '
+  - "Pilot: What\u2026? SOMEBODY ANSWER ME!"
+  - "Co-Pilot : \u2026"
+  - 'Pilot : What the hell.. '
+  - 'Pilot : Rookie, Shoot!'
+  - "Co-Pilot : \u2026 "
+  - 'Pilot : SHOOT, ROOKIE !!!'
+  - "Co-Pilot : \u2026sorry\u2026 I-i can\u2019t \u2026 my ha-hands\u2026"
+  - "Pilot : \u2026 Listen here, rookie, my comrades didn\u2019t die for nothing.
+    They are leaving their hopes to us. And if we turn back now their mothership
+    will escape and we won't get our chance again."
+  - "*deep breath*... you\u2019re right, captain\u2026 "
+  - 'Pilot : their mothership is up ahead, we gotta hurry'
+  - 'Co-Pilot : guess it won''t be that easy '
+  - "Pilot : brace yourself, kid. let\u2019s do this\u2026"
+  - "Pilot & Co-Pilot :  MAY THE STARS ALIGN WITH YOU\u2026.!!!"
+  dialogueText: {fileID: 0}
+--- !u!114 &76244336867375966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4096878076722757281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 7ee7dc5f697addd488947813a54047e4, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3199214660478765011}
+          m_TargetAssemblyTypeName: DialogueLines, Assembly-CSharp
+          m_MethodName: NextDialogueLine
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &6796345179687140521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 691177404321823906}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &691177404321823906
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6796345179687140521}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2807497509953945996}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
