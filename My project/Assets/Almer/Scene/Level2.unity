@@ -864,6 +864,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 1866590360}
+    - target: {fileID: 3199214660478765011, guid: 04b9dc55e136f274f930a507e0e852aa, type: 3}
       propertyPath: timelineTextLines.Array.size
       value: 10
       objectReference: {fileID: 0}
@@ -1533,6 +1537,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5389082490925743321, guid: 9155484f92a6d28408c00f5ea2ef177c, type: 3}
   m_PrefabInstance: {fileID: 1866590356}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1866590360 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5947801742102263049, guid: 9155484f92a6d28408c00f5ea2ef177c, type: 3}
+  m_PrefabInstance: {fileID: 1866590356}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866590357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1967133684
 PrefabInstance:
   m_ObjectHideFlags: 0
