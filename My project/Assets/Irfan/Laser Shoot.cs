@@ -17,22 +17,23 @@ public class EnemyShooter : MonoBehaviour
 
     private void Update()
     {
-        
-    
-        if (CountDownBetweenFire <= 0)
+        if (player != null)
         {
-            
-            Shoot();
-            CountDownBetweenFire = 1f / FireRate;
+
+            if (CountDownBetweenFire <= 0)
+            {
+
+                Shoot();
+                CountDownBetweenFire = 1f / FireRate;
+            }
+            CountDownBetweenFire -= Time.deltaTime;
+
         }
-        CountDownBetweenFire -= Time.deltaTime;
 
     }
    
     void Shoot()
     {
- 
-
         GameObject laser = Instantiate(laserPrefab, firePoint.position, firePoint.rotation);
         Laser bulletScript = laser.GetComponent<Laser>();
         Vector3 direction = (player.position - firePoint.position) * 90f ;
