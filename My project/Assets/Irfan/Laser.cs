@@ -11,7 +11,6 @@ public class Laser : MonoBehaviour
     {
         moveDirection = (direction - transform.position).normalized;
         transform.rotation = Quaternion.LookRotation(moveDirection);
-        Debug.Log(moveDirection);
     }
 
     void Update()

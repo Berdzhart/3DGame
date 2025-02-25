@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class HealthManager : MonoBehaviour
 {
@@ -6,12 +8,18 @@ public class HealthManager : MonoBehaviour
     public int currentHealth;
 
     [SerializeField] GameObject playerDestroyedVFX;
-    
+
+    [SerializeField] bool isPlayer = false;
+
+    MainMenu mainMenu;
+
     // Referensi ke script HealthBar
     public HealthBar healthBarUI;
 
     void Start()
     {
+        mainMenu = FindFirstObjectByType<MainMenu>();
+
         currentHealth = maxHealth;
         if(healthBarUI != null)
         {
@@ -40,7 +48,16 @@ public class HealthManager : MonoBehaviour
 
     void Die()
     {
-        Instantiate(playerDestroyedVFX, transform.position,Quaternion.identity);
-        Destroy(this.gameObject);
+        Instantiate(playerDestroyedVFX, transform.position, Quaternion.identity);
+
+        if (isPlayer)
+        {
+            mainMenu.ReloadLevel();
+            Destroy(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }
