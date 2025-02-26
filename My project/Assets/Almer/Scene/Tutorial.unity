@@ -1559,11 +1559,14 @@ PrefabInstance:
       value: PlayerRig
       objectReference: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - target: {fileID: 3872246272385018551, guid: 27ea2e8b5538cf04bb15253b92fd227d, type: 3}
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
 =======
+=======
+>>>>>>> Stashed changes
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1573,21 +1576,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
 =======
 >>>>>>> 38366b1fc773c648ec954b185d50dda4087e4e45
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     - target: {fileID: 4102219281381011165, guid: 27ea2e8b5538cf04bb15253b92fd227d, type: 3}
       propertyPath: crosshair
       value: 
       objectReference: {fileID: 1473375449}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - target: {fileID: 4901346717038706344, guid: 27ea2e8b5538cf04bb15253b92fd227d, type: 3}
       propertyPath: healthBarUI
       value: 
       objectReference: {fileID: 1473375450}
 =======
+=======
+>>>>>>> Stashed changes
 <<<<<<< HEAD
 =======
 >>>>>>> a032695a0d62bc05379f0fedb81ef9d0af83766c
 >>>>>>> 38366b1fc773c648ec954b185d50dda4087e4e45
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []

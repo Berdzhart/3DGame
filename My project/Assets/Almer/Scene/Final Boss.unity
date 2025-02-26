@@ -5143,11 +5143,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 770679785}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - target: {fileID: 7020462466916111486, guid: 27ea2e8b5538cf04bb15253b92fd227d, type: 3}
       propertyPath: field of view
       value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+=======
+    m_RemovedComponents:
+    - {fileID: 1347697159248996954, guid: 27ea2e8b5538cf04bb15253b92fd227d, type: 3}
+>>>>>>> Stashed changes
 =======
     m_RemovedComponents:
     - {fileID: 1347697159248996954, guid: 27ea2e8b5538cf04bb15253b92fd227d, type: 3}
@@ -8981,7 +8986,11 @@ PrefabInstance:
       propertyPath: laserPrefab
       value: 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       objectReference: {fileID: 2037726799570226560, guid: 6b589d4cbc3dd8745a2b61af3d561298, type: 3}
+=======
+      objectReference: {fileID: 1216804156}
+>>>>>>> Stashed changes
 =======
       objectReference: {fileID: 1216804156}
 >>>>>>> Stashed changes
